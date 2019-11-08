@@ -24,9 +24,9 @@ const App: React.FC = () => {
   console.log({chartData, listData})
   return (
     <div className="App">
-      <div style={{display: 'flex', flexDirection: 'row', flexGrow: 1, border: '1px solid black'}}>
-        <Chart chartData={chartData}/>
-        <List listData={listData}/>
+      <div className='app-container'>
+          <Chart chartData={chartData}/>
+          <List listData={listData}/>
       </div>
     </div>
   );

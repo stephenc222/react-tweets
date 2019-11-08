@@ -5,6 +5,12 @@
   height: 100vh;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
 
 .App-header {
   background-color: #282c34;
