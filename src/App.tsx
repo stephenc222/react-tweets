@@ -17,6 +17,10 @@ const App: React.FC = () => {
      })
   }, [])
   // @ts-ignore
+  if (!tweets.statuses) {
+    return <div>Loading...</div>
+  }
+  // @ts-ignore
   const chartData = getChartData(tweets)
   // @ts-ignore
   const listData = getListData(tweets)
