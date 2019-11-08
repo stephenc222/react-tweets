@@ -13,7 +13,6 @@ const App: React.FC = () => {
     api.getTweets()
       // @ts-ignore
       .then( (data: {}) =>{
-        console.log({data})
         setTweets(data)
      })
   }, [])
@@ -21,7 +20,6 @@ const App: React.FC = () => {
   const chartData = getChartData(tweets)
   // @ts-ignore
   const listData = getListData(tweets)
-  console.log({chartData, listData})
   return (
     <div className="App">
       <div className='app-container'>
